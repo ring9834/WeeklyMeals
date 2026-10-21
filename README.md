@@ -1,8 +1,6 @@
 # MealPlanner
 
-A practice project for client-side state (Zustand) alongside server state
-(TanStack Query), with SSR, ISR and CSR in Next.js, a .NET controller API,
-PostgreSQL, and Docker Compose.
+A full-stack web app for planning weekly meals and generating a combined shopping list. Built a .NET 10 controller-based REST API with EF Core and PostgreSQL, and a Next.js frontend in React and TypeScript that uses static rendering, SSR, ISR and CSR according to each page’s needs. Separated server state (TanStack Query) from client state (Zustand), and deployed the full stack locally with Docker Compose.
 
 ## Run it
 
