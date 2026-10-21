@@ -32,14 +32,9 @@ cd web && cp .env.local.example .env.local && npm install && npm run dev
 the Docker build or with `npm run build && npm start`.
 
 ## How the pieces fit
-
-```
-Browser ──(TanStack Query, CORS)──────────────► API :5000 ──► Postgres
-   ▲                                              ▲   │
-   │ HTML                                         │   │ POST /api/revalidate
-   │                                              │   ▼  (on-demand ISR)
-Next.js server ──(SSR/ISR fetch: http://api:8080)─┘  Next.js
-```
+<p style="text-align:center">
+<img width="544" height="288" alt="mealplanner_architecture" src="https://github.com/user-attachments/assets/0470e059-576a-4790-b5bd-3651e905bd9f" />
+</p>
 
 | Route | Rendering | File |
 |---|---|---|
