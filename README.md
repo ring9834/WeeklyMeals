@@ -58,7 +58,7 @@ The rule to remember: **Zustand stores IDs and intent; TanStack Query stores
 what the server knows.** The planner looks up recipe titles from the query
 cache by ID rather than copying them into the store.
 
-## Things to try (each one teaches something)
+## Things to try
 
 1. **Server-to-client handoff.** Load `/recipes?tag=vegetarian` and open the
    Network tab: no `/api/recipes` request from the browser on first load.
