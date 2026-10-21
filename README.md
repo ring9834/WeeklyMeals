@@ -20,7 +20,7 @@ docker compose up --build
 The API creates the schema and seeds ten recipes on first start.
 To reset the database: `docker compose down -v`.
 
-### Running pieces outside Docker (faster feedback while coding)
+### Running pieces outside Docker
 
 ```bash
 docker compose up db                  # just Postgres
@@ -32,7 +32,7 @@ cd web && cp .env.local.example .env.local && npm install && npm run dev
 the Docker build or with `npm run build && npm start`.
 
 ## How the pieces fit
-<p style="text-align:center">
+<p align="center">
 <img width="544" height="288" alt="mealplanner_architecture" src="https://github.com/user-attachments/assets/0470e059-576a-4790-b5bd-3651e905bd9f" />
 </p>
 
